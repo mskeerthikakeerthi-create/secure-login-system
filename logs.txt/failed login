@@ -1,0 +1,4 @@
+with open("logs.txt", "a") as log:
+    log.write(f"{datetime.now()} - FAILED LOGIN - {username}\n")
+
+return "Invalid Credentials"

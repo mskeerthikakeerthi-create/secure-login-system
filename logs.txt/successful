@@ -1,0 +1,7 @@
+if user and bcrypt.check_password_hash(user[3], password):
+
+    with open("logs.txt", "a") as log:
+        log.write(f"{datetime.now()} - SUCCESS LOGIN - {username}\n")
+
+    session['user'] = username
+    return redirect('/dashboard')
